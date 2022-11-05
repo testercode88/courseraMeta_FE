@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Lemon</title>
     <style>
-        d{
+        table, th, td{
             border: 1px solid black;
-            padding: 2px;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -20,7 +20,31 @@
     <h2>Pasta Salad</h2>
     <p>Lettuce, vegetables and mozzarella.</p>
     <img src="images/pasta_salad.webp" alt="pasta_salad" width="240" height="150">
-    <a href="location.html">Our Location</a>
+    <div><a href="location.html">Our Location</a></div>
+    <table>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Falafel</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Pasta Salad</td>
+            <td>$12.00</td>
+        </tr>
+    </table>
+
+    <form action="/registration" method="POST">
+        <label for="username">Username: </label><br>
+        <input type="text" name="username" id=""><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password"  id=""><br><br>
+
+        <input type="submit" name="" id=""><br> 
+    </form>
     
 </body>
 </html>
